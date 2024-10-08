@@ -1,0 +1,12 @@
+version: '3'
+services:
+  vite-app:
+    build: .
+    container_name: vite-dev-container
+    ports:
+      - "5173:5173"  # Expose Vite's default dev server port
+    volumes:
+      - ./:/app       # Sync the project directory with the container
+    stdin_open: true
+    tty: true
+    command: sh -c "npm run dev -- --host"  # Start Vite dev server and make it accessible
