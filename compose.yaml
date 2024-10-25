@@ -2,7 +2,7 @@ version: '3'
 services:
   vite-app:
     build: .
-    container_name: vite-dev-container
+    container_name: test-react-tld
     ports:
       - "5173:5173"  # Expose Vite's default dev server port
     volumes:

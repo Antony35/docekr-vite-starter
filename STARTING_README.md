@@ -3,7 +3,7 @@ This is a starter project docker + vite + react in dev environment
 
 ### Required locally:
 - docker
-- docker-compose v2.20.2
+- compose v2.20.2
 
 ### Build the image :
 ```
